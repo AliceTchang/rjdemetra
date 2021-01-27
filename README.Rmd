@@ -46,7 +46,7 @@ install.packages("RJDemetra")
 devtools::install_github("jdemetra/rjdemetra")
 ```
 
-If you have troubles with the installation, check the [installation manual](https://github.com/jdemetra/rjdemetra/wiki/Installation-manual).
+If you have difficulties with the installation, check the [installation manual](https://github.com/jdemetra/rjdemetra/wiki/Installation-manual).
 
 ## Basic example
 
@@ -58,7 +58,7 @@ myseries <- ipi_c_eu[, "FR"]
 x13_model <- x13(myseries) # X-13ARIMA method
 ts_model <- tramoseats(myseries) # TRAMO-SEATS method
 
-# Basic plot with the original series, the trend and the SA series
+# Basic plot of the original series, the trend and the SA series
 plot(x13_model, type_chart = "sa-trend")
 # S-I ratio
 plot(x13_model$decomposition)
